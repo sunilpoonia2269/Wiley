@@ -1,0 +1,52 @@
+Recommendations to Follow ->
+
+1. There is no default return types of methods in java. In java it is compulsory to write return type.
+2. There is default access specifier for all the method and class. that is "default", by default it is not public
+3. Write methods with return statement wherever possible.
+4. Do not write any business logic in public static void main
+5. You can create objects in any method. It is not only psvm where you create objects. - Recommendation
+6. Do not write any business logic without any method. - Rule
+7. Method name should have the task connected with some nouns - Recommendation
+8. Do not create unnecessary local variables. There are termed as 'code smells'. This blocks code optmizations.
+9. Class name should start with capital.
+10. method name 
+11. Constructor don't create object but they are used to initlize objects or data member.
+
+
+
+
+
+For every class there is cosmic super class. Name of cosmic superclass is "Object".
+class Dog .... extends Object
+
+
+
+
+-Rules of Method of Override
+1. Method signature should be same
+2. return type should be same or covariant e.g - 
+3. cannot have restrictve access specifer
+4. cannot change arguments
+5. There cannot be broder exception
+6. Final method cannot be overriden
+
+
+- Abstract class
+1. Abstract class cannot be instatained
+2. Abstract class can contain all the method as abstract or none of the methods as abstract
+3. Abstract class can contain constructor
+4. Can contain the data member and member functions as well
+5. You need to extend abstract class
+
+
+-Interface
+1. Interface is by default abstract class with some speical behaviour
+2. All the methods by default public and abstract
+3. Cannot contain any data member, can contain static constatant
+4. it Cannot contain consturctor
+5. You need to implement interface.
+6. We can implement more than one interface.
+7. Interface can extend another interface.
+
+
+
