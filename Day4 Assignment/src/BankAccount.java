@@ -5,14 +5,16 @@ public class BankAccount {
 	private double openingBalance;
 	private double currentBalance;
 	private static double totalBalance;
+	private AccountType accountType;
 	
-	public BankAccount(int accountId, String accountHolderName, double openingBalance) {
+	public BankAccount(int accountId, String accountHolderName, double openingBalance, AccountType accountType) {
 		super();
-		if(openingBalance < 0) throw new IllegalArgumentException();
+		if(accountType.getMinBalance() > openingBalance) throw new IllegalArgumentException();
 		this.accountId = accountId;
 		this.accountHolderName = accountHolderName;
 		this.openingBalance = openingBalance;
 		this.currentBalance = openingBalance;
+		this.accountType = accountType;
 		BankAccount.totalBalance = BankAccount.totalBalance + openingBalance;
 	}
 
@@ -40,12 +42,17 @@ public class BankAccount {
 		return totalBalance;
 	}
 	
+	public AccountType getAccountType() {
+		return accountType;
+	}
+
+
 	public double withDrawAmount(double amount) {
 		if(amount < 0) {
 			System.out.println("Negative amount cannot be withdrawn");
 			return this.currentBalance;
 		}
-		if(amount > this.currentBalance) {
+		if(amount > this.currentBalance || accountType.getMinBalance() > (this.currentBalance - amount)) {
 			System.out.println("Insufficient Funds");
 			return this.currentBalance;
 		}
