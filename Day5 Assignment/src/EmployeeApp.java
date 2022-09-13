@@ -8,6 +8,7 @@ public class EmployeeApp {
 		Employee employee4 = new Employee(104, "Rohit Rana", Department.DEVELOPMENT, 53000);
 		Employee employee5 = new Employee(105, "Dinesh Kartik", Department.FINANCE, 71000);
 		Employee employee6 = new Employee(106, "Rohit Sharma", Department.MANAGEMENT, 210000);
+		Employee employee7 = new Employee(101, "Sunil Poonia", Department.FINANCE, 132000);
 
 		Employee[] empArray = { employee1, employee2, employee3, employee4, employee5, employee6 };
 
@@ -30,6 +31,12 @@ public class EmployeeApp {
 
 		for (Employee emp : managementEmployees)
 			System.out.println("Employee of " + Department.MANAGEMENT + " department is -> " + emp.getEmpName());
+		
+		System.out.println("---------------------------***-------------------------");
+		
+		System.out.println(employee6.equals(employee2));
+		System.out.println(employee7.equals(employee1));
+		
 
 	}
 
