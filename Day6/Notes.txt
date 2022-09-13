@@ -1,0 +1,27 @@
+Keywords -> try, catch, finally, throw, throws
+
+
+What do you mean by handling the exception ?
+- Handling exception is not Rectifying exception 
+- Your program should not abruptly
+- The other parts of program which are not connected with exception, should not get impacted
+- If exception occurs it should gracefully handled with proper error messages
+
+
+Types of exceptions :
+- checked exceptions -> Are checked at compile time. Developer is forced to write the code in exception handling block.
+- unchecked exceptions -> Checked at runtime. Writing the exception handling block is optional. 
+
+How to handle it :
+- Put the suspicies or doubtful code in the try block and followed by that add the catch block to catch the specific exception. you are expecting by your code.
+
+
+Cascading of Excepitons :
+ - Where single block of try can generate multiple exceptions
+ 
+
+- We can use another try catch block inside a try block.
+
+- Anytime you are working with resources it is forced by checked exception. Because it is not in hand of programmer that file will be correct.
+- whenever you are using resources out of jvm. 
+ 
