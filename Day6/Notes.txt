@@ -23,5 +23,43 @@ Cascading of Excepitons :
 - We can use another try catch block inside a try block.
 
 - Anytime you are working with resources it is forced by checked exception. Because it is not in hand of programmer that file will be correct.
-- whenever you are using resources out of jvm. 
+- whenever you are using resources out of jvm you are forced to write that code in try catch Like - JDBC, Http Connectivity, Playing video. 
  
+ 
+Cascading of exception : 
+- If one catch block get exceuted then other catch block will not execute. After one exception will be thrown in try block code will go to catch block
+
+
+Combinations of try -catch : 
+* -> try-catch-finally
+* -> try-finally
+-finally always executes irrespective of exception occurs or not
+-finally block will still gets executed even if we put return in try block. 
+-finally block will not executed in case of System.exit();
+
+- Writing business logic in try catch is not recommended but we can put invocation of methods in it.
+
+throw :
+- throw keyword is used to explicitly generate exception in your program.
+- Used with userdefined exceptions
+
+throws :
+- When we don't want to handle exception in any method then we use throws keyword to indicate that it may throw exception and it should be handled
+- We use throws so invoker can customize behaviour of catch block. 
+- throws is more flexible way.
+- Wrong practice to use throws keyword with psvm. It doesn't handle exception
+- We can use throws keyword with unchecked exception but complier doesn't force us to handle that in parent function. So it doesn't serves purpose.
+
+
+
+
+
+
+- try and finally work on different thread. So there is no gaurntee of sequence in try and finally block.
+- If a thread killed during executing try catch block then finally block will not execute but application whole may work
+
+Handling exception in generic way :
+- Handling exception with Exception class and if conditions is not recommended i.e catch(Exception e){writing if instanceof something}
+- super class exception should not be on top. It should be in reverse way
+
+

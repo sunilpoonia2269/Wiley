@@ -1,0 +1,46 @@
+Multi-threading :
+
+1. Runnable interface -> basic structure is controlled by runnable
+2. Thread class -> It is implementation of runnable interface
+
+
+1. By extending the thread class
+2. By implementing runnable interface
+
+
+Lifecycle of thread :
+	1. Thread instatined : new Thread();
+	2. putting the thread into ready pool : start(); -> Stack for thread is created
+	3. Thread start executing : run(); -> Invoked by JVM. but which thread is being executed is done by operation system.
+	4. Thread pauses or blocks itself : so as to make sure that other thread gets a chance to execute.
+		sleep(time);
+		wait();
+		wait(time);
+		IO blocking;
+		delay();
+		yield();
+		
+	5. Resume the thread : notify(), notifyAll(),
+	6. Terminating the thread. run() method completed.
+
+
+Interview Questions :
+	1. relation between start() and run() ?
+	2. How to use runnable thread ?
+	3. can i invoke run method explicitly ?
+	4. 
+	
+	
+Priorites of threads :
+- 0 -> lowest
+- 11/10/9/7 -> Highest depending on OS
+- Normal 
+- Min
+- Max
+
+- setPriority();
+
+Joining a thread : complete the other thread and then come back to current thread
+yield : give the processing to other thread, which is having equal or high priority. If there is no such thread then execution continuous.
+
+	
