@@ -1,0 +1,32 @@
+What is collection -> Group of objects
+
+Arrays : Group of objects
+Employee[] myEmp = new Employee[10];
+
+Arrays vs Collections
+	1. Arrays can be collection of objects as well as primitive vs Objects.
+	2. Array size is fixed vs Dynamic
+	3. Array do not have some predefined methods. you have to manually process it vs rich library.
+	
+
+Interface:
+	Collection
+	List
+	Set
+	Map
+	
+	
+Classes:
+	ArrayList
+	Vector
+	LinkedList
+	HashMap
+	TreeMap
+	HashSet
+	TreeSet
+	hashtable
+	PriorityQueue
+	Dequeue
+	
+
+
