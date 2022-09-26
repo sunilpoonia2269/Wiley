@@ -59,11 +59,6 @@ public class CustomerUtility {
 		if (noOfUnitConsumed < 0) throw new NegativeUnitConsumedException();
 	}
 
-	void displayCustomerDetails(List<Customer> customerList) {
-
-		for (Customer customer : customerList)
-			System.out.println(customer);
-	}
 
 	void sortCustomerByBillAmount(List<Customer> list) {
 		list.sort((o1, o2) ->o2.getTotalBill().compareTo(o1.getTotalBill()));

@@ -35,6 +35,7 @@ public class CustomerSerializable {
 		try(FileInputStream  fis = new FileInputStream(new File("customer.dat"));
 			ObjectInputStream ois = new ObjectInputStream(fis)) {
 			
+			
 			@SuppressWarnings("unchecked")
 			List<Customer> list = (ArrayList<Customer>)ois.readObject();
 			
