@@ -1,0 +1,24 @@
+JDBC : Java Database Connectivity
+
+Drivers :
+	Type1 - ODBC Drivers, OS Dependent, 
+	Type2 - Native Drivers, Vendor/Organization specific, 
+	Type3 - Network Drivers, (Distributed Databases)
+	Type4 - Completely Vendor drivers(Provided by DB) ex. - MySQL provides Java and C# Drivers
+	
+JDBC API : 
+	Driver Class : getConnection();
+	Connection Interface : createStatement();
+	Statement Interface: executeQuery(), execute(), executeUpdate();
+		Statement :
+			execute() - Boolean, DDL
+			excecuteUpdate() - int, DML
+			executeQuery() - ResultSet, DQL
+		PreparedStatement :
+			Precompiled Query
+		CallableStatement : 
+	ResultSet Interface: 
+	ResultSetMetadata Interface: 
+	DatabaseMetadata Interface:
+	
+- Implementation classes are provided by the JAR file provided by Database;

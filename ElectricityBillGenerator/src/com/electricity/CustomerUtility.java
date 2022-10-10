@@ -38,7 +38,7 @@ public class CustomerUtility {
 		this.customerListByAreaCode.put(areaCode, newList);
 	}
 
-	double calculateTotalBill(int noOfUnitsConsumed) {
+	public double calculateTotalBill(int noOfUnitsConsumed) {
 		double totalBill = 0;
 		
 		if(noOfUnitsConsumed <= 100) 
@@ -55,7 +55,7 @@ public class CustomerUtility {
 	}
 
 	
-	void inputValidation(int noOfUnitConsumed) throws NegativeUnitConsumedException {
+	public void inputValidation(int noOfUnitConsumed) throws NegativeUnitConsumedException {
 		if (noOfUnitConsumed < 0) throw new NegativeUnitConsumedException();
 	}
 

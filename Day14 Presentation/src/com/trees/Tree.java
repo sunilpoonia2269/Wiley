@@ -8,4 +8,9 @@ class Tree {
 	public Tree(){
 		this.root = null;
 	}
+	
+	
+	
 }
+
+

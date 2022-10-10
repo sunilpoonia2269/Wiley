@@ -1,8 +1,10 @@
 
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.function.*;
+import java.util.function.Consumer;
 
-public class FunctionalInterfaceDemo {
+class FunctionalInterfaceDemo {
 
 
 	public static void main(String[] args) {
@@ -18,6 +20,9 @@ public class FunctionalInterfaceDemo {
 //		};
 //		
 //		consumer.accept("Sunil");
+		
+		
+		InputStream is = new FileInputStream();
 		
 		Consumer<String> consumer = (name)->System.out.println("Name is " + name);
 		consumer.accept("Sunil");
